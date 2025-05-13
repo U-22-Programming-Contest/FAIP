@@ -1,0 +1,40 @@
+{
+    "id": "chatcmpl-AJWuUSatQlJP6zYZ9Xm7xGNAFxgtX",
+    "choices": [
+        {
+            "finish_reason": "tool_calls",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "少しでも快適に帰れるように、枕の高さを調整いたしますね。お疲れさまでした。枕の高さを「ちょっと」低くします。お待ちください。",
+                "refusal": null,
+                "role": "assistant",
+                "tool_calls": [
+                    {
+                        "id": "call_JF996LclLAPASA6kLNgTYTtg",
+                        "function": {
+                            "arguments": "{\"pillow_height\":\"-0.2\"}",
+                            "name": "change_pillow_height"
+                        },
+                        "type": "function"
+                    }
+                ]
+            }
+        }
+    ],
+    "created": 1729218102,
+    "model": "gpt-4o-mini-2024-07-18",
+    "object": "chat.completion",
+    "system_fingerprint": "fp_e2bde53e6e",
+    "usage": {
+        "completion_tokens": 70,
+        "prompt_tokens": 225,
+        "total_tokens": 295,
+        "completion_tokens_details": {
+            "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+            "cached_tokens": 0
+        }
+    }
+}

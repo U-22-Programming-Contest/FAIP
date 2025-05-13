@@ -1,0 +1,47 @@
+{
+    "functions": [
+      {
+        "name": "get_delivery_data",
+        "description": "提供された注文IDに基づいて配送情報を取得します。",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "order_id": {
+              "type": "string",
+              "description": "配送データを取得するための一意の注文ID。"
+            }
+          },
+          "required": ["order_id"]
+        }
+      },
+      {
+        "name": "get_weather_data",
+        "description": "指定された日の天気情報を取得します。",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "day": {
+              "type": "string",
+              "description": "リクエストされた天気データの日付（例: 'YYYY-MM-DD' 形式）。"
+            }
+          },
+          "required": ["day"]
+        }
+      },
+      {
+        "name": "move_pillow",
+        "description": "指定された枕IDに基づいて、枕を新しい位置に移動します。",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "pillow_id": {
+              "type": "string",
+              "description": "移動する枕の一意のID。"
+            }
+          },
+          "required": ["pillow_id"]
+        }
+      }
+    ]
+  }
+  
